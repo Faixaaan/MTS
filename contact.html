@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Superior Tiling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Correct Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header-main">
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid px-lg-5">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/Images/image 1.png" alt="MST Logo" class="logo">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="About.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bathroom Renovation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tiles Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary phone-btn" href="tel:0423936823">
+                                <i class="fas fa-phone me-2"></i>
+                                0423 936 823
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar  -->
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="banner" style="background-image: url('/assets/Images/Abouts-us-banner.jpg');">
+        <div class="banner-overlay"></div>
+        <h1>Contact Us</h1>
+    </div>
+    <!-- About Us Section -->
+    <section class="about-section abt-sectionn">
+        <div class="container">
+
+
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="choose-us-image-card">
+                            <img src="assets/Images/location.png.bv.webp" class="icon">
+                        </div>
+                        <h4>LOCATION</h4>
+                        <p>36 Brighter Avenue,
+                            Tarneit, VIC 3029</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="choose-us-image-card">
+                            <img src="assets/images/datetime.png.bv.webp" class="icon">
+                        </div>
+                        <h4>TRADING HOURS</h4>
+                         <ul>
+                            <li class="trading-li">Monday - Friday 10:00am – 6:00pm</li>
+                            <li class="trading-li">Saturday & Sunday Closed</li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="choose-card text-center p-4">
+                        <div class="choose-us-image-card">
+                            <img src="assets/Images/phone.png.bv.webp" class="icon icon_location">
+                        </div>
+                        <h4>CONTACT DETAILS</h4>
+                        <p>0423 935 823</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="contact-form">
+
+                        <h3>Have questions or feedback?</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Phone" required>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <select class="form-control custom-select-boot" required>
+                                        <option value="" disabled selected> Service</option>
+                                        <option>Tiling</option>
+                                        <option>Bathroom Renovation</option>
+                                        <option>Waterproofing</option>
+                                    </select>
+
+                                    <!-- Bootstrap Icon -->
+                                    <i class="bi bi-chevron-down select-icon"></i>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Location" required>
+                                </div>
+                            </div>
+
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary btn-contact">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.998684416113!2d153.40094931505678!3d-27.46955152326909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159793f9b3b3b%3A0x3c4e2c1b5e5e5e5e!2sGold%20Coast%2C%20Queensland%2C%20Australia!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" class="map"></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- consult section -->
+    <div class="consult-section">
+
+        <div class="row g-0">
+
+            <!-- LEFT BLUE BOX -->
+            <div
+                class="col-12 col-md-6 consult-left d-flex flex-column justify-content-center align-items-center text-center">
+                <h2 class="consult-title">Request a Consultation</h2>
+                <p class="consult-phone">
+                    <i class="fas fa-phone me-2"></i> 0423 935 823
+                </p>
+            </div>
+
+            <!-- RIGHT WHITE BOX -->
+            <div class="col-12 col-md-6 consult-right d-flex align-items-center">
+                <p class="consult-text">
+                    Melbourne Superior Tiling is an Australian owned and operated tiling services
+                    provider based in Melbourne, Australia. Our technicians have delivered premium
+                    quality wall and floor tiling services to the building industry for close to a decade.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Logo Section -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-logo">
+                        <img src="assets/Images/image 1.png" alt="MST Logo" class="footer-logo-img">
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">General Indoor Tiling</a></li>
+                        <li><a href="#">Facade & Pier Tiling</a></li>
+                        <li><a href="#">Balcony Tiling</a></li>
+                        <li><a href="#">Alfresco & Porch Tiling</a></li>
+                        <li><a href="#">Screeding</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location Section -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="footer-heading">Location</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Hoppers Crossing</a></li>
+                        <li><a href="#">Caroline Springs</a></li>
+                        <li><a href="#">Keilor</a></li>
+                        <li><a href="#">Altona</a></li>
+                        <li><a href="#">Werribee</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-heading">Contact us</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0505665787666" class="footer-links">0505 6657 8766</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="footer-links">36 Brighter Avenue,<br>Tarneit, VIC 3029</span>
+                        </li>
+                    </ul>
+                    <!-- Social Media Icons - CORRECTED -->
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
