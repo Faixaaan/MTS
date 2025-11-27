@@ -39,7 +39,7 @@ body {
 .nav-link {
     color: #000000;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 8px 20px !important;
     transition: color 0.3s ease;
     white-space: nowrap;
@@ -73,8 +73,9 @@ body {
 }
 
 .phone-btn:hover {
-    background-color: #006ba3;
+    background-color: #fff!important;
     transform: translateY(-1px);
+    border: 1px solid black;
 }
 
 .phone-btn svg {
@@ -437,16 +438,28 @@ html {
 }
 
 .btn-black {
-    background: #000;
-    color: #fff;
+    
     border: none;
-    padding: 13px 10px;
+    padding: 13px 24px;
     margin-left: 10px;
+    border-radius: 5px;
+}
+
+.knw-more{
+   background: transparent!important;
+    border: 1px solid #000;
+    color: #000!important; 
+}
+.knw-more:hover{
+    background-color: #0F78AF!important;
+    color: #fff!important;
+    border: none!important;
 }
 
 .btn-black:hover {
-    background: #333;
-    color: #fff;
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
 }
 
 
@@ -545,9 +558,9 @@ html {
 }
 
 .project-btn {
-    background: #000;
+    background: #fff;
     border: none;
-    color: white;
+    color: #000;
     padding: 10px 25px;
 
     font-weight: 500;
@@ -573,12 +586,52 @@ html {
     transition-delay: 0.1s;
 }
 
+@media (max-width: 768px) {
+    .project-card {
+        position: relative;
+    }
+
+    .project-btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1 !important;
+    }
+
+    .project-card:hover .project-btn {
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 768px) {
+    #projectCarousel .carousel-item .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* PHONE ONLY */
+@media (max-width: 768px) {
+    .my-prev,
+    .my-next {
+        top: 50% !important; /* change between 25% to 50% */
+    }
+
+    .my-prev {
+        left: 3% !important;   /* optional adjustment */
+    }
+
+    .my-next {
+        right: 3% !important;  /* optional adjustment */
+    }
+}
+
+
 
 /* Renovation-section css */
 
 
 .Renovation-section {
-    padding: 80px 0px;
+    padding: 0px 0px 30px;
     background-color: #fff;
 }
 
@@ -591,7 +644,14 @@ html {
 
 .renovation-button {
     background-color: #0F78AF;
+  
+    border-radius: 5px ;
+}
+.renovation-button:hover {
+    background-color: #fff;
     border-radius: 0px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 .renovation-description {
@@ -690,6 +750,10 @@ html {
     .percent-sign {
         font-size: 1.3rem;
     }
+    .Renovation-section {
+    padding: 0px 0px;
+    background-color: #fff;
+}
 }
 
 @media (max-width: 576px) {
@@ -1073,6 +1137,16 @@ html {
         flex-direction: column;
 
     }
+    .carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: #6c63ff;
+    border-radius: 50%;
+    top: 25%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
 }
 
 /* banner */
@@ -1314,12 +1388,38 @@ html {
         border-bottom: 1px solid #d5d5d5;
         background: linear-gradient(90deg, #fff 0%, #737373 250%);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center!important;
+        align-items: center!important;
         min-height: 300px;
         flex-direction: column;
+        margin-bottom: 15px;
 
     }
+    .service-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+
+.service-text {
+    color: #444;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.details-btn {
+    background: #0b7bbf;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20%;
+}
+.renovation-title{
+font-size: 34px;
+}
 }
 
 /* extent bar  */
@@ -1456,6 +1556,7 @@ html {
         font-size: 36px;
         font-weight: 700;
         text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
     }
 }
 
@@ -1527,6 +1628,16 @@ html {
     .consult-text {
         font-size: 15px;
     }
+    .about-section {
+    padding: 30px 0!important;
+}
+.abt-sectionn {
+    padding: 0px 0px;
+    background-color: #fff !important;
+}
+.project-section{
+  padding: 60px 0px!important;
+}
 }
 
 
@@ -1814,6 +1925,15 @@ html {
     .blog-img {
         max-width: 100%;
     }
+    .blog-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+    height: 509px;
+}
+
 }
 
 
@@ -2083,9 +2203,8 @@ html {
     .middle-box {
         border-left: none;
         border-right: none;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-top: 30px;
+ 
+        padding-top: 15px;
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
     }
@@ -2106,6 +2225,10 @@ html {
     .servicee-icon img {
         width: 45px;
         height: 45px;
+    }
+    .servicee-box{
+        padding-top: 10px 0px!important;
+        margin-top: 10px!important;
     }
 }
 
@@ -2182,6 +2305,10 @@ html {
     .reno-title {
         font-size: 18px;
     }
+    .renovation-section {
+    background: #e9f5fc;
+    padding: 40px 0;
+}
 }
 
 /* durable bathroom section */
@@ -2276,6 +2403,11 @@ html {
         padding-bottom: 30px;
         margin-bottom: 30px;
     }
+    .melbourne-two-col .row>div:last-child {
+   border-right: none;
+        border-bottom: 1px solid #d5d5d5;
+       
+}
 }
 
 /* Responsive text */
@@ -2290,7 +2422,7 @@ html {
 
     .melbourne-two-col .row>div:last-child {
         padding-left: 40px;
-        /* adjust as you like */
+        border-bottom: 1px solid #d5d5d5;
     }
 }
 
@@ -2301,6 +2433,7 @@ html {
 
     .melbourne-two-col .row>div:last-child {
         padding-left: 40px;
+        border-bottom: 1px solid #d5d5d5;
         /* adjust as you like */
     }
 }
