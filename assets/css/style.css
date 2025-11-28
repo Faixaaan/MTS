@@ -2704,4 +2704,84 @@ font-size: 34px;
         flex-direction: column;
         gap: 5px;
     }
+    .nav-tabs .nav-link.active {
+    background: #0F78AF; /* your theme color */
+    color: #fff !important;
 }
+    
+}
+
+.client-card {
+    
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+   
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.client-card img {
+    width: 100%;
+ 
+    
+    min-height: 280px!important;
+}
+/* Remove bottom border from tab container */
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+/* Remove bottom border from buttons */
+.nav-tabs .nav-link {
+    border: none !important;
+    background: #f5f5f5;
+    margin: 0 5px;
+    padding: 15px 22px!important;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Active tab style */
+.nav-tabs .nav-link.active {
+    background: #0F78AF; /* your theme color */
+    color: #fff !important;
+}
+
+/* Hover effect */
+.nav-tabs .nav-link:hover {
+    background: #e2e2e2;
+}
+/* Make carousel images take full width and height of modal */
+#clientCarousel .carousel-item img {
+    width: 90vh;
+    height: 80vh; /* Adjust height as needed */
+    object-fit: cover; /* Keep aspect ratio and cover container */
+}
+/* Close Button with background for modal */
+#clientModal .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1051;
+    background-color: #fff; /* dark background behind X */
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* Make the "X" icon white */
+#clientModal .btn-close::before,
+#clientModal .btn-close::after {
+    background-color: #fff;
+}
+
+
+
